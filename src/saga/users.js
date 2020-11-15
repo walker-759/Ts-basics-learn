@@ -1,4 +1,9 @@
+// 引入需要的api
+// takeEvery监视同步action的
+// call  视频推荐用他包住异步请求
+// put 提交action 的
 import { takeEvery, call, put } from 'redux-saga/effects'
+// 引入api
 import { getuserapi, getusernameapi } from '../api/index'
 // 获取用户   生成器函数  执行异步动作的
 function* getuser() {
